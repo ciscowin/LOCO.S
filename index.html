@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMEROS PASOS CON JAVASCRIOT</title>
+    <!--Muy importante por que esto hace que salga de referencia en google para que se genere el seo -->
+    <meta name="decription" content="Primeros pasas para aprender"/>
+</head>
+<body>
+    <h2>Mostrar Fecha</h2>
+
+    <script>
+        //Comentario de una linia 
+        /*Comentario multi linia */
+        /*Recomendación de esta pagina web para visitar `para saver mas de javacript*/
+        /*http://librosweb.es/javascriot/index.html*/
+
+        document.write("<h1>"+Date()+"</h1>");
+
+    </script>
+
+    <hr />
+    <h2>Remplazar contenido HTML</h2>
+    <p id="prueba-fecha">Este es un párrafo</p>
+    <script>
+        document.getElementById("prueba-fecha").innerHTML = Date();
+    </script>
+   
+    <hr />
+
+    <h2>Remplazar contenido  HTMLcon un contenido</h2>
+    <p id="prueba-fecha2">Este es otro párrafo</p>
+    <input type="button" value="Mostrar fecha" onclick="mostrarFecha()"/>
+
+     <script>
+         //declaracion de un afunción
+         function mostrarFecha()
+         {
+             document.getElementById("prueba-fecha2").innerHTML = Date();
+         }
+     </script> 
+
+     <hr />
+
+        <h2>Variables</h2>
+        
+        <script>
+            var x = 5;
+            document.write(x);
+            x*=10;
+            document.write("<br />"+x);
+        </script>
+        <hr />
+        <h2>if - elseif - else</h2>
+        
+        <script>
+            var fecha = new Date();
+            var hora = fecha.getHours();
+            document.write(hora);
+            if(hora <= 11){
+                document.write("<br /><h3>BUENOS DIAS</h3>");
+            }
+            else if(hora >=12 && hora <= 18)
+            {
+                document.write("<br /><h3>BUENAS TARDES</h3>");
+            }
+            else 
+            {
+                document.write("<br /><h3>BUENAS NOCHES </h3>");
+            }
+        </script>
+
+</body>
+</html>
