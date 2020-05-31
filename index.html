@@ -71,5 +71,54 @@
             }
         </script>
 
+        <hr>
+
+        <h2>Switch - Case</h2>
+
+        <script>
+            var dia = fecha.getDay();
+            document.write(dia);
+            /*DLMMJVS
+            123456*/
+            switch(dia) 
+            {
+                case 0:
+                    document.write("<br>Domingo =D");
+                    break;
+                case 5:
+                    document.write("<br>Por fin es VVVVVVVVVieeeeeeeeeeeeeernesssssss!!!!!!!!!!");
+                    break;
+                case 6:
+                    document.write("<br>Sabadito =D");
+                    break;
+                default:
+                    document.write("<br>Domingo ¬_¬ Espereando a que llegue el fin de semana");
+                    break;
+            }
+        </script>
+
+        <hr>
+
+        <h2>For</h2>
+        <script>
+            // 3 Partes: 1)Inincicalización 2) condicion 3) incremento o decremento
+            var i;
+            for(i=1;i<7;i++)
+            {
+                document.write("<h"+i+">Encabezado de tipo"+i+"</h"+i+">");
+            }
+        </script>
+
+        <hr>
+        <h2>While</h2>
+        <script>
+            var j=6;
+            while(j>0)
+            {
+                document.write("<h"+j+">Encabezado de tipo"+j+"</h"+j+">");
+                j--;
+            }
+        </script>
+
 </body>
 </html>
