@@ -120,5 +120,80 @@
             }
         </script>
 
+        <hr>
+        <h2>Cajas de interacción</h2>
+        <script>
+            function mostrarAlerta()
+            {
+                alert("Hola mundo");
+            }
+            function mostrarConfirmacion()
+            {
+                confirm("Selecciona una obcion");
+            }
+            function mostrarDialgo()
+            {
+                prompt("Escribe tu nombre");
+            }
+        </script>
+        <input type="button" value="Caja de Alerta" onclick="mostrarAlerta()" />
+        <input type="button" value="Caja de Confirmación" onclick="mostrarConfirmacion()" />
+        <input type="button" value="Caja de Dialogo" onclick="mostrarDialgo()" />
+
+        <hr>
+        <h2>Try... castch (Detección de errorres de programación)</h2>
+        <script>
+            function mensajeError()
+            {
+                try
+                {
+                    aler("Hola")
+                }
+                catch(error)
+
+                {
+                    alert(error.messa)
+                }
+            }
+        </script>
+            <input type="button" value="Ver error" onclick="mensajeError()" />
+
+
+            <hr>
+            <h2>Consola de javacript</h2>
+            <script>
+                function mostrarConsola()
+                {
+                    var nombre = "Jonathan";
+                    console.log("Hola "+nombre);
+                }
+            </script>
+            <input type="button" value="Ver consola" onclick="mostrarConsola()" />
+
+            <hr>
+            <h2>Arreglos</h2>
+            <script>
+                var misVariables = new Array("cadena",1,true);
+                document.write(misVariables+"<br />");
+                document.write(misVariables[0]+"<br />");
+                document.write(misVariables[1]+"<br />");
+                document.write(misVariables[2]+"<br />");
+
+                var semana = new Array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sábado");
+                for(var n=0; n<semana.length;n++)
+                {
+                    document.write(semana[n]+"<br />");
+                }
+            </script>
+
+            <hr>
+            <h2>Información del navegador</h2>
+            <script>
+                document.write("Nombre: "+navigator.appName+"<br />");
+                document.write("Versión: "+navigator.appVersion+"<br />");
+                document.write("Sistema Operativo: "+navigator.platform+"<br />");
+            </script>
+
+            <hr>
 </body>
 </html>
